@@ -14,8 +14,8 @@ $power = function (int $numb, int $power = 1) {
     return pow($numb, $power);
 }; 
 
-$curriedSquare = $curry($power);
+$curriedPower = $curry($power);
 
-$result = $curriedSquare(2, 8);
+$result = $curriedPower(2, 8);
 
 var_dump($result);
